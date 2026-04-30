@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: whatsapp-bulk-sender
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: RENDER_EXTERNAL_URL
+        value: https://business-automation-qd9l.onrender.com # Change this to your actual Render URL
+      - key: DATA_DIR
+        value: ./data
+      - key: ADMIN_EMAIL
+        value: admin@example.com
+      - key: ADMIN_PASS
+        value: admin123🛡️ Change this to your permanent login password
+    # ℹ️ Render Free Tier deletes files on restart. 
+    # Setting the above ADMIN variables creates a 'Master Account' that never disappears!
