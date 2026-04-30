@@ -72,4 +72,4 @@ This project is pre-configured for **Render**.
 - `.gitignore` prevents sensitive data from being uploaded to public repositories.
 
 ---
-Developed with ❤️ by Siddhant Naik
+
